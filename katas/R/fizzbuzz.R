@@ -14,10 +14,10 @@
 #' }
 #'
 fizzbuzz = function(n){
-  if(n == 1){
-    return(c('1'))
-  } else {
-    return(c('1', '2'))
+  out = c('1')
+  if(n > 1){
+    out = c(out, '2')
   }
+  return(out)
 
 }
