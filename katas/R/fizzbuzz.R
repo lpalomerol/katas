@@ -14,12 +14,15 @@
 #' }
 #'
 fizzbuzz = function(n){
-  out = c('1')
-  if(n == 2){
-    out = c(out, '2')
-  } else if (n == 3)(
-    out = c('1', '2', 'fizz')
-  )
+
+  out = c()
+  for(i in 1:n){
+    if(i == 3){
+      out = c(out, 'fizz')
+    } else {
+      out = c(out, as.character(i))
+    }
+  }
   return(out)
 
 }
