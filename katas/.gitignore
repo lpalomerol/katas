@@ -1,0 +1,51 @@
+# Archivos de RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Carpeta de pruebas y compilaciones
+tests/testthat.Rout
+tests/testthat.Rout.save
+tests/testthat.Rout.fail
+*.Rcheck/
+
+# Compilaciones de paquetes
+*.tar.gz
+*.Rproj
+.Rbuildignore
+
+# Archivos generados por roxygen2
+man/
+
+# Dependencias instaladas localmente (opcional si usas renv o similar)
+renv/library/
+renv/cache/
+
+# Archivos temporales
+*.out
+*.log
+*.aux
+*.tmp
+*.swp
+*.bak
+*.old
+
+# Datos sensibles o temporales
+*.csv
+*.tsv
+*.xlsx
+*.sav
+*.rds
+
+# Resultados generados
+*.pdf
+*.html
+*.png
+*.jpeg
+*.tiff
+*.svg
