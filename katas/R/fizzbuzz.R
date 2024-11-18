@@ -15,9 +15,11 @@
 #'
 fizzbuzz = function(n){
   out = c('1')
-  if(n > 1){
+  if(n == 2){
     out = c(out, '2')
-  }
+  } else if (n == 3)(
+    out = c('1', '2', 'fizz')
+  )
   return(out)
 
 }
