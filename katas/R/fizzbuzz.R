@@ -19,6 +19,8 @@ fizzbuzz = function(n){
   for(i in 1:n){
     if(i == 3){
       out = c(out, 'fizz')
+    } else if(i == 5){
+      out = c(out, 'buzz')
     } else {
       out = c(out, as.character(i))
     }
