@@ -14,16 +14,18 @@
 #' }
 #'
 fizzbuzz = function(n){
-
+  print_value = function(i){
+    if(i %% 3 == 0){
+      return('fizz')
+    } else if(i %% 5 == 0){
+      return('buzz')
+    } else {
+      return(as.character(i))
+    }
+  }
   out = c()
   for(i in 1:n){
-    if(i == 3){
-      out = c(out, 'fizz')
-    } else if(i == 5){
-      out = c(out, 'buzz')
-    } else {
-      out = c(out, as.character(i))
-    }
+    out = c(out, print_value(i))
   }
   return(out)
 
