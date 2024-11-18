@@ -31,3 +31,15 @@ test_that('when input is 3 should return "1", "2", "fizz"', {
   #Assert
   expect_equal(output, expected_output)
 })
+
+
+test_that('when input is 4 should return "1", "2", "fizz", "4"', {
+  # Arrange
+  expected_output = c('1', '2', 'fizz', '4')
+  input = 4
+
+  #Act
+  output = fizzbuzz(input)
+  #Assert
+  expect_equal(output, expected_output)
+})
