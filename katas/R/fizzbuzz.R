@@ -14,7 +14,7 @@
 #' }
 #'
 fizzbuzz = function(n){
-  print_value = function(i){
+  detect_fizzbuzz = function(i){
     if(i %% 15 == 0){
       return('fizzbuzz')
     } else if(i %% 3 == 0){
@@ -27,7 +27,7 @@ fizzbuzz = function(n){
   }
   out = c()
   for(i in 1:n){
-    out = c(out, print_value(i))
+    out = c(out, detect_fizzbuzz(i))
   }
   return(out)
 
