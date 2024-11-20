@@ -14,10 +14,19 @@
 #' }
 #'
 fizzbuzz = function(n){
-  out = c()
-  for(i in 1:n){
-    out = c(out, detect_fizzbuzz(i))
-  }
-  return(out)
+  return(fizzbuzz_recur(n))
+  # out = c()
+  # for(i in 1:n){
+  #   out = c(out, detect_fizzbuzz(i))
+  # }
+  # return(out)
 
+}
+
+fizzbuzz_recur = function(n){
+  if(n == 1){
+    return('1')
+  }else{
+    return(c(fizzbuzz_recur(n-1), detect_fizzbuzz(n)))
+  }
 }
